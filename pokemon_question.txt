@@ -1,0 +1,61 @@
+Problem Statement 1:
+
+Find out the average HP (Hit points) of all the Pokémon, using the below query.
+
+
+Problem Statement 2:
+
+Create and insert values of existing table ‘pokemon’ into a new table ‘pokemon1’, with an additional column ‘power_rate’ to find the count of ‘powerful’ and ‘moderate’ from the table ‘pokemon1’.
+
+
+
+
+Problem Statement 3:
+
+Find out the top 10 Pokémons according to their HP’s using the below query.
+
+
+
+
+Problem Statement 4:
+
+Find out the top 10 Pokémons based on their Attack stat, using the below query.
+
+
+
+
+Problem statement 5:
+
+Find out the top 10 Pokémons based on their Defense stat, using the below query.
+
+
+
+
+
+Problem statement 6:
+
+Find out the top 10 Pokémons based on their total power.
+
+
+
+
+Problem statement 7:
+
+Find out the top 10 Pokémons having a drastic change in their attack and sp.attack, using the below query.
+
+
+
+
+Problem statement 8:
+
+Find out the top 10 Pokémons having a drastic change in their defense and sp.defense, using the below query.
+
+
+
+Problem statement 9:
+
+Find out the top 10 fastest Pokémons, using the below query.
+
+
+
+
