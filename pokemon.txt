@@ -1,0 +1,47 @@
+1.
+CREATE TABLE pokemon (Number Int,Name String,Type1 String,Type2 String,Total Int,HP Int,Attack Int,Defense Int,Sp_Atk Int,Sp_Def Int,Speed Int) row format delimited fields terminated BY ',' lines terminated BY '\n' tblproperties("skip.header.line.count"="1");
+
+
+2.
+load data local inpath '/home/edureka/Downloads/Pokemon.csv' INTO table pokemon;
+
+
+3.
+Select avg(HP) as avg_hp from pokemon;
+
+
+4.
+create table pokemon1 as select *, IF(HP>69.25875, 'powerful', IF(HP<69.25875, 'Moderate','powerless')) AS power_rate from pokemon;
+
+
+
+
+5.
+select COUNT(name),power_rate from pokemon1 group by power_rate;
+
+
+
+6.
+select name,hp from pokemon1 order by hp desc limit 10;
+
+
+7.
+select name,attack from pokemon1 order by attack desc limit 10;
+
+8.
+select name,defense from pokemon1 order by defense desc limit 10;
+
+
+
+
+9.
+select name,(attack-sp_atk) as atk_diff from pokemon1 order by atk_diff limit 10;
+
+
+10.
+select name,(defense-sp_def) as def_diff from pokemon1 order by def_diff limit 10;
+
+
+11.
+Select distinct(name), speed from pokemon order by speed desc limit 10;
+
